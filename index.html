@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serviços especializados em conserto e manutenção de eletrodomésticos com garantia, rapidez e preço justo. Atendimento em toda região.">
+    <meta name="keywords" content="conserto, manutenção, lavadora, geladeira, ar-condicionado, microondas, assistência técnica, eletrodomésticos">
+    <meta name="google-site-verification" content="Qmc2wbkcrJpc8ExMmw0G7i_Tqeo85wRFhE9j_5bJ2mc" />
+    <title>JK Máquinas | Assistência Técnica Especializada em Eletrodomésticos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+    /* RESET - Reseta margens e padding padrão */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --primary-color: #0066cc;
+        --secondary-color: #00a8ff;
+        --accent-color: #ff6b00;
+        --dark-color: #1a1a2e;
+        --light-color: #f8f9fa;
+        --success-color: #28a745;
+        --whatsapp-color: #25D366;
+        --text-color: #333;
+        --text-light: #f8f9fa;
+        --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        --transition: all 0.3s ease;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f5f7fa;
+        color: var(--text-color);
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('logo2.png') no-repeat center center/cover;
+
+        height: 100vh;
+        min-height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--text-light);
+        position: relative;
+    }
+
+    .header-content {
+        max-width: 1200px;
+        padding: 0 20px;
+        z-index: 2;
+    }
+
+    .logo {
+        font-family: 'Roboto', sans-serif;
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo span {
+        color: var(--secondary-color);
+    }
+
+    .slogan {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        font-weight: 300;
+    }
+
+    /* Navigation */
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        padding: 1rem 0;
+        transition: var(--transition);
+    }
+
+    nav.scrolled {
+        background-color: var(--dark-color);
+        box-shadow: var(--shadow);
+        padding: 0.5rem 0;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .nav-logo {
+        color: var(--text-light);
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .nav-logo span {
+        color: var(--secondary-color);
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-links li {
+        margin-left: 2rem;
+    }
+
+    .nav-links a {
+        color: var(--text-light);
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1rem;
+        transition: var(--transition);
+        position: relative;
+        padding: 0.5rem 0;
+    }
+
+    .nav-links a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--secondary-color);
+        transition: var(--transition);
+    }
+
+    .nav-links a:hover::after {
+        width: 100%;
+    }
+
+    .nav-links a:hover {
+        color: var(--secondary-color);
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+
+    /* Main Content */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    section {
+        padding: 5rem 0;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+        color: var(--dark-color);
+        position: relative;
+    }
+
+    .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background-color: var(--secondary-color);
+    }
+
+    /* Home Section */
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        border-radius: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: var(--transition);
+        text-decoration: none;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-primary {
+        background-color: var(--primary-color);
+        color: var(--text-light);
+    }
+
+    .btn-primary:hover {
+        background-color: var(--secondary-color);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-secondary {
+        background-color: transparent;
+        color: var(--text-light);
+        border: 2px solid var(--text-light);
+    }
+
+    .btn-secondary:hover {
+        background-color: var(--text-light);
+        color: var(--dark-color);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Services Section */
+    #services {
+        background-color: var(--light-color);
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .service-card {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .service-content {
+        padding: 1.5rem;
+    }
+
+    .service-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: var(--dark-color);
+    }
+
+    .service-description {
+        margin-bottom: 1.5rem;
+        color: #666;
+    }
+
+    .service-btn {
+        display: inline-block;
+        padding: 0.6rem 1.5rem;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: var(--transition);
+    }
+
+    .service-btn:hover {
+        background-color: var(--secondary-color);
+    }
+
+    /* About Section */
+    #about {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1581093450021-4a7360e9a9e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+        color: var(--text-light);
+    }
+
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .about-img {
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        max-width: 100%;
+    }
+
+    .about-text h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-text p {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .stat-item {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--secondary-color);
+    }
+
+    .stat-text {
+        font-size: 1rem;
+        opacity: 0.9;
+    }
+
+    /* Contact Section */
+    #contact {
+        background-color: var(--light-color);
+    }
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 3rem;
+    }
+
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        color: var(--dark-color);
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-icon {
+        margin-right: 1rem;
+        color: var(--primary-color);
+        font-size: 1.2rem;
+    }
+
+    .contact-text h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .contact-text p, .contact-text a {
+        color: #666;
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+    .contact-text a:hover {
+        color: var(--primary-color);
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .contact-form textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    .submit-btn {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 0.8rem 2rem;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: var(--transition);
+    }
+
+    .submit-btn:hover {
+        background-color: var(--secondary-color);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background-color: var(--whatsapp-color);
+        color: white;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        transition: var(--transition);
+        text-decoration: none;
+    }
+
+    .whatsapp-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Testimonials */
+    #testimonials {
+        background-color: var(--primary-color);
+        color: var(--text-light);
+    }
+
+    .testimonials-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .testimonial {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-text {
+        font-style: italic;
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+    }
+
+    .testimonial-author {
+        display: flex;
+        align-items: center;
+    }
+
+    .author-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 1rem;
+        object-fit: cover;
+    }
+
+    .author-info h4 {
+        margin-bottom: 0.3rem;
+    }
+
+    .author-info p {
+        opacity: 0.8;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        background-color: var(--dark-color);
+        color: var(--text-light);
+        padding: 3rem 0 1rem;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-col h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+
+    .footer-col h3::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background-color: var(--secondary-color);
+    }
+
+    .footer-links {
+        list-style: none;
+    }
+
+    .footer-links li {
+        margin-bottom: 1rem;
+    }
+
+    .footer-links a {
+        color: #ccc;
+        text-decoration: none;
+        transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+        color: var(--secondary-color);
+        padding-left: 5px;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-links a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        color: var(--text-light);
+        font-size: 1.2rem;
+        transition: var(--transition);
+    }
+
+    .social-links a:hover {
+        background-color: var(--secondary-color);
+        transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Modal */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1001;
+        overflow-y: auto;
+    }
+
+    .modal-content {
+        background-color: white;
+        margin: 5% auto;
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 800px;
+        width: 90%;
+        position: relative;
+        animation: modalFadeIn 0.5s;
+    }
+
+    @keyframes modalFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .close-modal {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #666;
+        transition: var(--transition);
+    }
+
+    .close-modal:hover {
+        color: var(--primary-color);
+    }
+
+    .modal-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .modal-title {
+        font-size: 2rem;
+        color: var(--primary-color);
+    }
+
+    .modal-body {
+        margin-bottom: 2rem;
+    }
+
+    .service-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .service-image {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+    }
+
+    .service-info h4 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: var(--dark-color);
+    }
+
+    .service-info ul {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .service-info li {
+        margin-bottom: 0.5rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 992px) {
+        .about-content {
+            grid-template-columns: 1fr;
+        }
+
+        .about-img {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        .service-details {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .logo {
+            font-size: 3.5rem;
+        }
+
+        .slogan {
+            font-size: 1.2rem;
+        }
+
+        .hamburger {
+            display: block;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            position: fixed;
+            top: 70px;
+            left: -100%;
+            width: 100%;
+            height: calc(100vh - 70px);
+            background-color: var(--dark-color);
+            flex-direction: column;
+            align-items: center;
+            padding-top: 2rem;
+            transition: var(--transition);
+        }
+
+        .nav-links.active {
+            left: 0;
+        }
+
+        .nav-links li {
+            margin: 1rem 0;
+        }
+
+        .cta-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn {
+            width: 80%;
+            margin-bottom: 1rem;
+        }
+
+        .stats {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .logo {
+            font-size: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .service-card {
+            max-width: 100%;
+        }
+    }
+    
+
+    /* Estilo do botão do WhatsApp */
+       /* Adicione isso no seu arquivo CSS ou na tag <style> */
+/* Versão alternativa - Estilo moderno */
+#whatsappButton {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    max-width: 320px;
+    margin: 10px auto;
+}
+
+        #whatsappButton::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #128C7E 0%, #25D366 100%);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        #whatsappButton:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(37, 211, 102, 0.4);
+        }
+
+        #whatsappButton:hover::before {
+            opacity: 1;
+        }
+
+        #whatsappButton:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 8px rgba(37, 211, 102, 0.3);
+        }
+
+        #whatsappButton i {
+            font-size: 1.3em;
+            transition: transform 0.3s ease;
+        }
+
+        #whatsappButton:hover i {
+            transform: scale(1.15);
+        }
+
+#about .section-title {
+    color: #0066cc; /* Azul da JK Máquinas */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    position: relative;
+    padding-bottom: 10px;
+    }
+
+    #about .section-title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(to right, #0066cc, #00a8ff);
+        border-radius: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+</style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">JK<span>Máquinas</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <div class="header-content">
+            <h1 class="logo">JK <span>Máquinas</span></h1>
+            <p class="slogan">Soluções especializadas em conserto e manutenção de eletrodomésticos</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Agendar Serviço</a>
+                <a href="https://wa.me/5511939397915" class="btn btn-secondary">Fale no WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <img src="lavadora.png" alt="Lavadoras" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Lavadoras</h3>
+                        <p class="service-description">Conserto especializado em todas as marcas e modelos de máquinas de lavar.</p>
+                        <a href="#" class="service-btn" onclick="openModal('lavadora')">Saiba mais</a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <img src="refrigerador.png" alt="Refrigeradores" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Refrigeradores</h3>
+                        <p class="service-description">Manutenção preventiva e corretiva para geladeiras e freezers.</p>
+                        <a href="#" class="service-btn" onclick="openModal('refrigerador')">Saiba mais</a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <img src="arcondicionado.png" alt="Ar Condicionado" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Ar Condicionado</h3>
+                        <p class="service-description">Instalação, limpeza e manutenção de sistemas de ar condicionado.</p>
+                        <a href="#" class="service-btn" onclick="openModal('arcondicionado')">Saiba mais</a>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <img src="microondas.png" alt="Microondas" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Microondas</h3>
+                        <p class="service-description">Reparo de fornos microondas com peças originais e garantia.</p>
+                        <a href="#" class="service-btn" onclick="openModal('microondas')">Saiba mais</a>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <img src="airfryer.png" alt="Air Fryer" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Air Fryer</h3>
+                        <p class="service-description">Conserto de fritadeiras elétricas das principais marcas.</p>
+                        <a href="#" class="service-btn" onclick="openModal('airfryer')">Saiba mais</a>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <img src="freezer.png" alt="Freezer Expositor" class="service-img">
+                    <div class="service-content">
+                        <h3 class="service-title">Freezer Expositor</h3>
+                        <p class="service-description">Manutenção especializada em freezers comerciais.</p>
+                        <a href="#" class="service-btn" onclick="openModal('freezer')">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="about-content">
+                <div>
+                    <img src="conserto.png" alt="Técnico trabalhando" class="about-img">
+                </div>
+                <div class="about-text">
+                    <h3>8 Anos de Excelência em Assistência Técnica</h3>
+                    <p>A JK Máquinas é referência em conserto e manutenção de eletrodomésticos, oferecendo serviços de qualidade com garantia e preço justo. Nossa equipe de técnicos é altamente qualificada e comprometida com a satisfação total dos clientes.</p>
+                    <p>Utilizamos peças originais e equipamentos de última geração para garantir o melhor desempenho dos seus eletrodomésticos, prolongando sua vida útil e evitando novos problemas.</p>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-text">Anos no mercado</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3.000+</div>
+                            <div class="stat-text">Clientes atendidos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-text">Satisfação</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Depoimentos</h2>
+            <div class="testimonials-container">
+                <!-- Testimonial 1 -->
+                <div class="testimonial">
+                    <p class="testimonial-text">"Excelente serviço! Minha máquina de lavar estava com problema e o técnico resolveu rapidamente, com preço justo e garantia. Recomendo a todos!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Cliente" class="author-img">
+                        <div class="author-info">
+                            <h4>Ana Carolina</h4>
+                            <p>Moradora - Jardins</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial">
+                    <p class="testimonial-text">"Atendimento rápido e profissional. Meu ar condicionado voltou a funcionar perfeitamente e o técnico ainda deu dicas de manutenção. Nota 10!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente" class="author-img">
+                        <div class="author-info">
+                            <h4>Roberto Almeida</h4>
+                            <p>Comerciante - Centro</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial">
+                    <p class="testimonial-text">"Já chamei a JK Máquinas várias vezes para consertar meus eletrodomésticos e sempre fico satisfeita. Técnicos educados e serviço com garantia."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente" class="author-img">
+                        <div class="author-info">
+                            <h4>Márcia Fernandes</h4>
+                            <p>Professora - Vila Mariana</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Entre em Contato</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Telefone</h4>
+                            <a href="tel:+5511939397915">(11) 93939-7915</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a href="mailto:jkmaquinas@gmail.com">jkmaquinas@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Área de Atendimento</h4>
+                            <p>São Paulo e Grande ABC</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda a Sábado: 8h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                        <h3>Solicite um Orçamento</h3>
+                        <form id="agendamentoForm">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo*</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="telefone">Telefone*</label>
+                                <input type="tel" id="telefone" name="telefone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail (opcional)</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="servico">Serviço*</label>
+                                <select id="servico" name="servico" required>
+                                    <option value="">Selecione o serviço*</option>
+                                    <option value="Lavadora">Lavadora</option>
+                                    <option value="Ar Condicionado">Ar Condicionado</option>
+                                    <option value="Microondas">Microondas</option>
+                                    <option value="Refrigerador">Refrigerador</option>
+                                    <option value="Air Fryer">Air Fryer</option>
+                                    <option value="Freezer">Freezer</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensagem">Descreva o Problema*</label>
+                                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                            </div>
+                            
+                            <button type="submit" id="whatsappButton">
+                                <i class="fab fa-whatsapp"></i> Enviar para WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5511939397915" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>JK Máquinas</h3>
+                    <p>Especialistas em conserto e manutenção de eletrodomésticos com qualidade e garantia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" onclick="openModal('lavadora')">Lavadoras</a></li>
+                        <li><a href="#" onclick="openModal('refrigerador')">Refrigeradores</a></li>
+                        <li><a href="#" onclick="openModal('arcondicionado')">Ar Condicionado</a></li>
+                        <li><a href="#" onclick="openModal('microondas')">Microondas</a></li>
+                        <li><a href="#" onclick="openModal('airfryer')">Air Fryer</a></li>
+                        <li><a href="#" onclick="openModal('freezer')">Freezer Expositor</a></li>                        
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Úteis</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:+5511939397915">(11) 93939-7915</a></li>
+                        <li><a href="mailto:jkmaquinas@gmail.com">jkmaquinas@gmail.com</a></li>
+                        <li>Suzano - SP</li>
+                        <li>Atendemos em todas as regiões</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2017 JK Máquinas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Service Modals -->
+    <!-- Lavadora Modal -->
+    <div id="lavadora-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h3 class="modal-title">Conserto de Lavadoras</h3>
+            </div>
+            <div class="modal-body">
+                <div class="service-details">
+                    <div>
+                        <img src="lavadora.png" alt="Lavadora" class="service-image">
+                    </div>
+                    <div class="service-info">
+                        <h4>Soluções completas para sua máquina de lavar</h4>
+                        <p>Oferecemos serviços especializados para todos os modelos e marcas de lavadoras, com peças originais e garantia.</p>
+                        
+                        <ul>
+                            <li>Troca de amortecedores e molas</li>
+                            <li>Reparo de bombas de água</li>
+                            <li>Substituição de correias</li>
+                            <li>Conserto de placas eletrônicas</li>
+                            <li>Manutenção preventiva</li>
+                            <li>Limpeza interna completa</li>
+                        </ul>
+                        
+                        <div class="price">A partir de R$ 120,00</div>
+                        <a href="#contact" class="btn btn-primary" onclick="closeModal()">Agendar Serviço</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Refrigerador Modal -->
+    <div id="refrigerador-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h3 class="modal-title">Conserto de Refrigeradores</h3>
+            </div>
+            <div class="modal-body">
+                <div class="service-details">
+                    <div>
+                        <img src="refrigerador.png" alt="Refrigerador" class="service-image">
+                    </div>
+                    <div class="service-info">
+                        <h4>Serviços especializados para geladeiras e freezers</h4>
+                        <p>Problemas com seu refrigerador? Nossos técnicos estão preparados para resolver qualquer tipo de defeito.</p>
+                        
+                        <ul>
+                            <li>Troca de compressor</li>
+                            <li>Reparo do sistema de degelo</li>
+                            <li>Substituição de borrachas de vedação</li>
+                            <li>Conserto de termostatos</li>
+                            <li>Recarga de gás</li>
+                            <li>Manutenção preventiva</li>
+                        </ul>
+                        
+                        <div class="price">A partir de R$ 150,00</div>
+                        <a href="#contact" class="btn btn-primary" onclick="closeModal()">Agendar Serviço</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Ar Condicionado Modal -->
+    <div id="arcondicionado-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h3 class="modal-title">Manutenção de Ar Condicionado</h3>
+            </div>
+            <div class="modal-body">
+                <div class="service-details">
+                    <div>
+                        <img src="arcondicionado.png" alt="Ar Condicionado" class="service-image">
+                    </div>
+                    <div class="service-info">
+                        <h4>Soluções completas para climatização</h4>
+                        <p>Serviços especializados em ar condicionado split, janela e outros modelos, com garantia de qualidade.</p>
+                        
+                        <ul>
+                            <li>Limpeza completa interna e externa</li>
+                            <li>Recarga de gás refrigerante</li>
+                            <li>Troca de capacitores e ventiladores</li>
+                            <li>Reparo de placas eletrônicas</li>
+                            <li>Instalação profissional</li>
+                            <li>Manutenção preventiva</li>
+                        </ul>
+                        
+                        <div class="price">A partir de R$ 180,00</div>
+                        <a href="#contact" class="btn btn-primary" onclick="closeModal()">Agendar Serviço</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Microondas Modal -->
+    <div id="microondas-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h3 class="modal-title">Conserto de Microondas</h3>
+            </div>
+            <div class="modal-body">
+                <div class="service-details">
+                    <div>
+                        <img src="microondas.png" alt="Microondas" class="service-image">
+                    </div>
+                    <div class="service-info">
+                        <h4>Reparo profissional de fornos microondas</h4>
+                        <p>Seu microondas não está aquecendo ou apresentando outros problemas? Temos a solução!</p>
+                        
+                        <ul>
+                            <li>Troca de capacitor de alta voltagem</li>
+                            <li>Substituição do magnetron</li>
+                            <li>Reparo de placas de controle</li>
+                            <li>Troca de interruptores de porta</li>
+                            <li>Conserto de painel eletrônico</li>
+                            <li>Manutenção geral</li>
+                        </ul>
+                        
+                        <div class="price">A partir de R$ 90,00</div>
+                        <a href="#contact" class="btn btn-primary" onclick="closeModal()">Agendar Serviço</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Air Fryer Modal -->
+    <div id="airfryer-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h3 class="modal-title">Conserto de Air Fryer</h3>
+            </div>
+            <div class="modal-body">
+                <div class="service-details">
+                    <div>
+                        <img src="airfryer.png" alt="Air Fryer" class="service-image">
+                    </div>
+                    <div class="service-info">
+                        <h4>Reparo especializado em fritadeiras elétricas</h4>
+                        <p>Sua Air Fryer parou de funcionar? Nossos técnicos podem diagnosticar e resolver o problema.</p>
+                        
+                        <ul>
+                            <li>Troca de resistência</li>
+                            <li>Substituição de termostato</li>
+                            <li>Reparo de placas eletrônicas</li>
+                            <li>Conserto de botões e controles</li>
+                            <li>Substituição de ventilador</li>
+                            <li>Manutenção geral</li>
+                        </ul>
+                        
+                        <div class="price">A partir de R$ 80,00</div>
+                        <a href="#contact" class="btn btn-primary" onclick="closeModal()">Agendar Serviço</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Freezer Modal -->
+    <div id="freezer-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <h3 class="modal-title">Manutenção de Freezer Expositor</h3>
+            </div>
+            <div class="modal-body">
+                <div class="service-details">
+                    <div>
+                        <img src="freezer.png" alt="Freezer Expositor" class="service-image">
+                    </div>
+                    <div class="service-info">
+                        <h4>Serviços especializados para freezers comerciais</h4>
+                        <p>Seu freezer expositor não está resfriando corretamente? Podemos ajudar!</p>
+                        
+                        <ul>
+                            <li>Troca de compressor</li>
+                            <li>Reparo do sistema de degelo</li>
+                            <li>Substituição de termostatos</li>
+                            <li>Recarga de gás refrigerante</li>
+                            <li>Conserto de ventiladores</li>
+                            <li>Manutenção preventiva</li>
+                        </ul>
+                        
+                        <div class="price">A partir de R$ 200,00</div>
+                        <a href="#contact" class="btn btn-primary" onclick="closeModal()">Agendar Serviço</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        // Funções de navegação mobile (mantidas)
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // Efeito de scroll na navbar
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        
+        // Scroll suave para links âncora
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#') {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+        
+        // Funções do modal (mantidas)
+        function openModal(service) {
+            document.getElementById(`${service}-modal`).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            document.querySelectorAll('.modal').forEach(modal => {
+                modal.style.display = 'none';
+            });
+            document.body.style.overflow = 'auto';
+        }
+        
+        window.addEventListener('click', function(e) {
+            if (e.target.classList.contains('modal')) {
+                closeModal();
+            }
+        });
+
+        // Envio para WhatsApp (versão simplificada)
+        document.getElementById("agendamentoForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            
+            // Verificação dos campos obrigatórios
+            const camposObrigatorios = ['nome', 'telefone', 'servico', 'mensagem'];
+            const camposVazios = camposObrigatorios.filter(id => !document.getElementById(id).value.trim());
+            
+            if (camposVazios.length > 0) {
+                alert("Por favor, preencha todos os campos obrigatórios!");
+                return;
+            }
+
+            // Emojis para cada tipo de serviço
+            const emojisServico = {
+                'Lavadora': '🧺',
+                'Ar Condicionado': '❄️',
+                'Microondas': '🍲',
+                'Refrigerador': '🧊',
+                'Air Fryer': '🍟',
+                'Freezer': '❄️'
+            };
+            
+            // Montagem da mensagem
+            const mensagem = `*SOLICITAÇÃO DE ORÇAMENTO - JK MÁQUINAS*\n\n` +
+                            `${emojisServico[document.getElementById("servico").value] || '🔧'} *Serviço:* ${document.getElementById("servico").value}\n` +
+                            `👤 *Cliente:* ${document.getElementById("nome").value}\n` +
+                            `📞 *Contato:* ${document.getElementById("telefone").value}\n` +
+                            (document.getElementById("email").value ? `📧 *E-mail:* ${document.getElementById("email").value}\n\n` : '\n') +
+                            `*Problema relatado:*\n${document.getElementById("mensagem").value}\n\n` +
+                            `_Enviado via site_`;
+
+            // Codificação e abertura do WhatsApp
+            const urlWhatsApp = `https://wa.me/5511939397915?text=${encodeURIComponent(mensagem)}`;
+            window.open(urlWhatsApp, '_blank');
+        });
+    </script>    
+</body>
+</html>
+
