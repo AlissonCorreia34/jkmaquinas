@@ -46,24 +46,43 @@
 
     /* Header */
     header {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  <img src="lavadora.png" alt="Lavadoras" class="service-img"> no-repeat center center/cover;
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-light);
+            text-align: center;
+        }
 
-        height: 100vh;
-        min-height: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: var(--text-light);
-        position: relative;
-    }
+        .header-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
 
-    .header-content {
-        max-width: 1200px;
-        padding: 0 20px;
-        z-index: 2;
-    }
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 3;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
 
     .logo {
         font-family: 'Roboto', sans-serif;
@@ -887,7 +906,18 @@
     </nav>
 
     <!-- Header -->
-    <header id="home">
+   <header id="home">
+        <!-- Imagem como tag HTML -->
+        <img 
+            src="https://github.com/beltmkt/jkmaquinas/raw/main/logo2.png" 
+            alt="JK Máquinas - Assistência Técnica" 
+            class="header-img"
+        >
+        
+        <!-- Overlay escuro -->
+        <div class="header-overlay"></div>
+        
+        <!-- Conteúdo do header (mantido igual) -->
         <div class="header-content">
             <h1 class="logo">JK <span>Máquinas</span></h1>
             <p class="slogan">Soluções especializadas em conserto e manutenção de eletrodomésticos</p>
