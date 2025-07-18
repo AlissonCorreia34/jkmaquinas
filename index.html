@@ -502,31 +502,31 @@
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     }
 
-    /* Testimonials */
-    #testimonials {
+    /* ials */
+    #ials {
         background-color: var(--primary-color);
         color: var(--text-light);
     }
 
-    .testimonials-container {
+    .ials-container {
         max-width: 800px;
         margin: 0 auto;
     }
 
-    .testimonial {
+    .ial {
         background-color: rgba(255, 255, 255, 0.1);
         padding: 2rem;
         border-radius: 10px;
         margin-bottom: 2rem;
     }
 
-    .testimonial-text {
+    .ial-text {
         font-style: italic;
         margin-bottom: 1.5rem;
         line-height: 1.8;
     }
 
-    .testimonial-author {
+    .ial-author {
         display: flex;
         align-items: center;
     }
@@ -547,6 +547,56 @@
         opacity: 0.8;
         font-size: 0.9rem;
     }
+
+    /* estilo do botão de avaliação*/
+        /* Container principal */
+        .review-container {
+        text-align: center;
+        margin: 30px 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        /* Texto de chamada */
+        .review-invite {
+        color: #faf6f6;
+        font-size: 18px;
+        margin-bottom: 15px;
+        }
+
+        /* Botão principal */
+        .review-btn {
+        background: linear-gradient(135deg, #4285F4 0%, #a0daff 100%);
+        color: white;
+        padding: 15px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        display: inline-block;
+        box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
+        transition: all 0.3s ease;
+        }
+
+        /* Efeito hover */
+        .review-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 7px 20px rgba(66, 133, 244, 0.4);
+        }
+
+        /* Conteúdo interno do botão */
+        .btn-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        }
+
+        /* Ícone de estrela */
+        .star-icon {
+        width: 18px;
+        height: 18px;
+        }
+
 
     /* Footer */
     footer {
@@ -951,7 +1001,7 @@
                 <li><a href="#home">Início</a></li>
                 <li><a href="#services">Serviços</a></li>
                 <li><a href="#about">Sobre</a></li>
-                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#ials">Depoimentos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
             <div class="hamburger">
@@ -1083,15 +1133,15 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
+    <!-- ials Section -->
+    <section id="ials">
         <div class="container">
             <h2 class="section-title">Depoimentos</h2>
-            <div class="testimonials-container">
-                <!-- Testimonial 1 -->
-                <div class="testimonial">
-                    <p class="testimonial-text">"Excelente serviço! Minha máquina de lavar estava com problema e o técnico resolveu rapidamente, com preço justo e garantia. Recomendo a todos!"</p>
-                    <div class="testimonial-author">
+            <div class="ials-container">
+                <!-- ial 1 -->
+                <div class="ial">
+                    <p class="ial-text">"Excelente serviço! Minha máquina de lavar estava com problema e o técnico resolveu rapidamente, com preço justo e garantia. Recomendo a todos!"</p>
+                    <div class="ial-author">
                         <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Cliente" class="author-img">
                         <div class="author-info">
                             <h4>Ana Carolina</h4>
@@ -1100,10 +1150,10 @@
                     </div>
                 </div>
                 
-                <!-- Testimonial 2 -->
-                <div class="testimonial">
-                    <p class="testimonial-text">"Atendimento rápido e profissional. Meu ar condicionado voltou a funcionar perfeitamente e o técnico ainda deu dicas de manutenção. Nota 10!"</p>
-                    <div class="testimonial-author">
+                <!-- ial 2 -->
+                <div class="ial">
+                    <p class="ial-text">"Atendimento rápido e profissional. Meu ar condicionado voltou a funcionar perfeitamente e o técnico ainda deu dicas de manutenção. Nota 10!"</p>
+                    <div class="ial-author">
                         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente" class="author-img">
                         <div class="author-info">
                             <h4>Roberto Almeida</h4>
@@ -1112,10 +1162,10 @@
                     </div>
                 </div>
                 
-                <!-- Testimonial 3 -->
-                <div class="testimonial">
-                    <p class="testimonial-text">"Já chamei a JK Máquinas várias vezes para consertar meus eletrodomésticos e sempre fico satisfeita. Técnicos educados e serviço com garantia."</p>
-                    <div class="testimonial-author">
+                <!-- ial 3 -->
+                <div class="ial">
+                    <p class="ial-text">"Já chamei a JK Máquinas várias vezes para consertar meus eletrodomésticos e sempre fico satisfeita. Técnicos educados e serviço com garantia."</p>
+                    <div class="ial-author">
                         <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente" class="author-img">
                         <div class="author-info">
                             <h4>Márcia Fernandes</h4>
@@ -1125,6 +1175,21 @@
                 </div>
             </div>
         </div>
+
+        <div class="review-container">
+            <p class="review-invite">Deixe seu depoimento também! ⭐</p>
+            <a href="https://www.google.com/maps/place/JK+M%C3%A1quinas/@-23.6824124,-46.5399359,17z/data=!4m8!3m7!1s0x4260a3f5784eb523:0xf5001eb5a8a1d579!8m2!3d-23.6824124!4d-46.5399359!9m1!1b1!16s%2Fg%2F11mct__5kb?entry=ttu4" 
+                target="_blank" 
+                class="review-btn">
+                <span class="btn-content">
+                <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                </svg>
+                AVALIAR A JK MÁQUINAS
+                </span>
+            </a>
+        </div>
+
     </section>
 
     <!-- Contact Section -->
@@ -1260,7 +1325,7 @@
                         <li><a href="#home">Início</a></li>
                         <li><a href="#services">Serviços</a></li>
                         <li><a href="#about">Sobre Nós</a></li>
-                        <li><a href="#testimonials">Depoimentos</a></li>
+                        <li><a href="#ials">Depoimentos</a></li>
                         <li><a href="#contact">Contato</a></li>
                     </ul>
                 </div>
